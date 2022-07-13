@@ -60,7 +60,7 @@ RUN apt-get install -y libglfw3-dev
 RUN apt-get install -y clang-5.0
 
 # ========== Add codebase stub ==========
-CMD mkdir /root/code
+CMD mkdir /root/code exit 0
 ADD environment.yml /root/code/environment.yml
 RUN conda env create -f /root/code/environment.yml
 
